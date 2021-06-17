@@ -108,6 +108,11 @@ header nav a:hover{
 
 .background{
     background: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+
+    opacity: 0.9;
 }
 
 .link-logo{
@@ -123,20 +128,24 @@ header nav a:hover{
 }
 
 .main{
-    padding: 200px 0;
+    padding: 25px 0;
 }
 
 .background-form{
-    border: 1px solid white;
+    background: rgba(0,0,0,.75);
+    border-radius: 5px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    width: 400px;
+    width: 55%;
     margin: 0 auto;
 
-    padding: 36px;
+    background-repeat: no-repeat;
+
+    padding: 68px;
+    
 }
 
 .titulo-formulario{
@@ -147,3 +156,90 @@ header nav a:hover{
 }
 
 
+/* retirando algumas coisas do bootstrap */
+
+.form-control{
+    background-color: #333 !important;
+    border: none !important;
+    
+}
+
+.label{
+    color: #8c8c8c !important;
+}
+
+.botao-entrar{
+    display: block;
+    width: 100%;
+
+    margin-top: 2rem;
+    
+    background-color: #e50914;
+
+    border: none;
+    border-radius: 4px;
+
+    min-height: 50px;
+
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.ajuda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 1rem;
+    
+}
+
+.ajuda a{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.facebook{
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 3rem;
+}
+
+.facebook i{
+    color: cornflowerblue;
+    /*background-color: #fff;*/
+}
+
+.assine{
+    color: #b3b3b3;
+    margin-top: 0.9rem;
+
+    font-size: 18px;
+}
+
+.assine a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.recaptcha{
+    text-align: justify;
+    color: #b3b3b3;
+    font-size: 12px;
+
+    width: 270px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .background-form{
+        width: 450px;
+    }
+}
